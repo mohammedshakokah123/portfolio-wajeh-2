@@ -1,66 +1,66 @@
 const experiences = [
   {
-    company: "UAE Software Company",
-    location: "Remote",
-    flag: "🇦🇪",
-    role: "Flutter Developer",
-    duration: "6 Months",
-    type: "Remote",
-    highlights: [
-      "Maintained and enhanced a production Flutter application.",
-      "Fixed bugs and implemented new features.",
-      "Collaborated remotely with the development team.",
-      "Successfully published application updates to Google Play.",
-    ],
-  },
-  {
-    company: "Software Company",
+    company: "Training Center",
     location: "Latakia, Syria",
-    flag: "🇸🇾",
-    role: "Flutter Developer",
-    duration: "2 Years",
-    type: "On-site",
+    flag: "👨‍🏫",
+    role: "IT Instructor & Technical Trainer",
+    duration: "Ongoing",
+    type: "Online & In-Center",
     highlights: [
-      "Developed and maintained multiple Flutter applications.",
-      "Built scalable features using Clean Architecture and BLoC.",
-      "Integrated REST APIs, Firebase, authentication, maps, and payment solutions.",
-      "Collaborated closely with UI/UX designers and backend developers.",
+      "Delivered beginner and intermediate IT training sessions in-center and online.",
+      "Taught programming fundamentals, Dart/Flutter, state management, architecture, and API integration.",
+      "Designed structured courseware, exercises, and project briefs for each cohort.",
+      "Mentored students through projects, debugging sessions, and one-to-one code reviews.",
     ],
   },
   {
-    company: "Freelance Flutter Developer & Technical Lead",
+    company: "Freelance Software Engineer & Technical Lead",
     location: "Multiple Clients",
     flag: "🌍",
     role: "Technical Lead",
     duration: "",
     type: "Freelance",
     highlights: [
-      "Led the development team for a SaaS platform.",
-      "Planned architecture and distributed tasks among developers.",
+      "Led the development team for a SaaS platform and distributed tasks among developers.",
       "Communicated directly with clients and translated requirements into technical solutions.",
       "Delivered multiple freelance projects across different industries.",
     ],
   },
   {
-    company: "Training Center",
-    location: "",
-    flag: "👨‍🏫",
-    role: "Flutter Instructor",
-    duration: "",
-    type: "",
+    company: "Software Company",
+    location: "Latakia, Syria",
+    flag: "🇸🇾",
+    role: "Software Engineer (Mobile)",
+    duration: "2 Years",
+    type: "On-site",
     highlights: [
-      "Delivered Flutter training sessions for beginner and intermediate students.",
-      "Taught Dart, Flutter fundamentals, state management, Clean Architecture, and API integration.",
-      "Mentored students through practical projects and code reviews.",
+      "Developed and maintained multiple cross-platform applications.",
+      "Built scalable features using clean architecture and BLoC.",
+      "Integrated REST APIs, Firebase, authentication, maps, and payment solutions.",
+      "Collaborated closely with UI/UX designers and backend developers.",
+    ],
+  },
+  {
+    company: "UAE Software Company",
+    location: "Remote",
+    flag: "🇦🇪",
+    role: "Software Engineer",
+    duration: "6 Months",
+    type: "Remote",
+    highlights: [
+      "Maintained and enhanced a production mobile application.",
+      "Fixed bugs and implemented new features for an active user base.",
+      "Collaborated remotely with the development team.",
+      "Successfully published application updates to Google Play.",
     ],
   },
 ];
 
 const stats = [
-  { label: "Years Experience", value: "4+" },
+  { label: "Years in Software", value: "3+" },
   { label: "Projects Delivered", value: "12+" },
-  { label: "Companies", value: "2" },
-  { label: "Team Lead", value: "Yes" },
+  { label: "Mentoring Formats", value: "1:1 + Group" },
+  { label: "Training Delivery", value: "Online + In-Center" },
 ];
 
 export default function Experience() {
@@ -72,11 +72,12 @@ export default function Experience() {
           style={{ animationDelay: "0s", animationFillMode: "forwards" }}
         >
           <h2 className="mb-4 text-balance text-3xl font-bold md:text-4xl">
-            Professional Experience
+            Professional &amp; Teaching Experience
           </h2>
           <p className="mx-auto max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            A journey through companies, freelance projects, and teaching — building
-            production-ready apps and leading teams.
+            Software engineering in production teams, technical leadership on
+            client projects, and hands-on classroom mentoring — the experience
+            behind every training session.
           </p>
         </div>
 
@@ -90,7 +91,7 @@ export default function Experience() {
                 key={stat.label}
                 className="rounded-xl border border-border bg-card p-4 text-center shadow-sm"
               >
-                <div className="text-2xl font-bold text-primary">
+                <div className="text-xl font-bold text-primary-strong sm:text-2xl">
                   {stat.value}
                 </div>
                 <div className="mt-1 text-xs text-muted-foreground">
@@ -128,7 +129,7 @@ export default function Experience() {
                           <span className="md:hidden text-lg">{exp.flag}</span>
                           <h3 className="text-lg font-bold">{exp.company}</h3>
                         </div>
-                        <p className="text-sm text-primary font-medium">
+                        <p className="text-sm text-primary-strong font-medium">
                           {exp.role}
                         </p>
                       </div>
@@ -139,7 +140,7 @@ export default function Experience() {
                           </span>
                         )}
                         {exp.type && (
-                          <span className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
+                          <span className="inline-flex items-center rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-medium text-primary-strong">
                             {exp.type}
                           </span>
                         )}

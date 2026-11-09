@@ -49,11 +49,13 @@ export default function Footer() {
             className="animate-fade-up"
             style={{ animationDelay: "0s", animationFillMode: "forwards" }}
           >
-            <h3 className="mb-4 text-xl font-bold text-primary">
-              &lt;FlutterDev /&gt;
+            <h3 className="mb-4 text-xl font-bold text-primary-strong">
+              Wajeh Al-Hawari
             </h3>
             <p className="text-sm leading-relaxed text-muted-foreground">
-              Building exceptional mobile experiences with Flutter.
+              IT Instructor, Technical Trainer &amp; Software Engineer — helping
+              learners build real skills through hands-on, project-based
+              training.
             </p>
           </div>
 
@@ -62,17 +64,19 @@ export default function Footer() {
             style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}
           >
             <h4 className="mb-4 font-semibold">Quick Links</h4>
-            <ul className="flex flex-col items-start justify-start gap-2 lg:flex-row lg:items-center lg:gap-8">
-              {["Projects", "About", "Contact"].map((link) => (
-                <li key={link}>
-                  <a
-                    href={`/#${link.toLowerCase()}`}
-                    className="cursor-pointer text-sm text-muted-foreground transition-colors hover:text-foreground"
-                  >
-                    {link}
-                  </a>
-                </li>
-              ))}
+            <ul className="flex flex-col items-start justify-start gap-2 lg:flex-row lg:flex-wrap lg:items-center lg:gap-x-4 lg:gap-y-2">
+              {["Training", "Teaching", "Skills", "Projects", "Contact"].map(
+                (link) => (
+                  <li key={link}>
+                    <a
+                      href={`/#${link.toLowerCase()}`}
+                      className="cursor-pointer text-sm text-muted-foreground transition-colors hover:text-foreground"
+                    >
+                      {link}
+                    </a>
+                  </li>
+                )
+              )}
             </ul>
           </div>
 
@@ -88,7 +92,7 @@ export default function Footer() {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-lg bg-secondary p-2 transition-colors hover:bg-secondary/80 hover:text-primary"
+                  className="rounded-lg bg-secondary p-2 transition-colors hover:bg-secondary hover:text-primary"
                   aria-label={link.label}
                 >
                   {link.icon}
@@ -104,8 +108,8 @@ export default function Footer() {
         >
           <div className="border-t border-border pt-8 text-center text-sm text-muted-foreground">
             <p>
-              &copy; {new Date().getFullYear()} Flutter Developer Portfolio.
-              All rights reserved.
+              &copy; {new Date().getFullYear()} Wajeh Al-Hawari — IT Instructor
+              &amp; Software Engineer. All rights reserved.
             </p>
           </div>
         </div>

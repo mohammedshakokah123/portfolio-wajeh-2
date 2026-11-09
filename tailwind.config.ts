@@ -17,6 +17,7 @@ export default {
         muted: "var(--muted)",
         "muted-foreground": "var(--muted-foreground)",
         primary: "rgb(var(--primary-rgb) / <alpha-value>)",
+        "primary-strong": "var(--primary-strong)",
         "primary-foreground": "var(--primary-foreground)",
         secondary: "var(--secondary)",
         accent: "rgb(var(--accent-rgb) / <alpha-value>)",

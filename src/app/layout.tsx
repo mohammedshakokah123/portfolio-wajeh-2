@@ -3,24 +3,30 @@ import "./globals.css";
 import ConnectToast from "@/components/ConnectToast";
 
 export const metadata: Metadata = {
-  title: "Wajeh Al-Hawari | Flutter Developer Portfolio",
+  title: "Wajeh Al-Hawari | IT Instructor, Technical Trainer & Software Engineer",
   description:
-    "Experienced Flutter Developer with 3+ years building production-ready mobile applications. Specialized in Clean Architecture, Bloc/Cubit, Firebase, and App Store submissions.",
+    "IT Instructor and Technical Trainer with 3+ years of software engineering experience. Professional IT training, mentoring, and student guidance delivered online and in-center for NGOs, UNRWA programs, schools, and training centers.",
   keywords: [
-    "Flutter Developer",
-    "Mobile App Developer",
-    "Clean Architecture",
-    "Bloc Cubit",
-    "Firebase",
-    "Dart",
-    "iOS Developer",
-    "Android Developer",
+    "IT Instructor",
+    "Technical Trainer",
+    "Software Engineer",
+    "IT Training",
+    "Programming Instructor",
+    "Project-Based Learning",
+    "Curriculum Design",
+    "Mentoring",
+    "NGO Training",
+    "UNRWA",
+    "Flutter",
+    "Laravel",
+    "React",
   ],
   authors: [{ name: "Wajeh Al-Hawari" }],
   openGraph: {
-    title: "Wajeh Al-Hawari | Flutter Developer Portfolio",
+    title:
+      "Wajeh Al-Hawari | IT Instructor, Technical Trainer & Software Engineer",
     description:
-      "Experienced Flutter Developer with 3+ years building production-ready mobile applications.",
+      "3+ years of software engineering combined with professional IT training, mentoring, and student guidance — online and in-center.",
     type: "website",
   },
 };
@@ -31,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full scroll-smooth antialiased">
+    <html lang="en" className="dark h-full scroll-smooth antialiased">
       <body className="flex min-h-full flex-col">
         {children}
         <ConnectToast />

@@ -74,8 +74,8 @@ export default function Contact() {
             Get in Touch
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Have a project in mind or want to collaborate? I&apos;d love to hear
-            from you!
+            Planning a training program, hiring an IT instructor, or building a
+            software project? I&apos;d love to hear from you.
           </p>
         </div>
 
@@ -150,7 +150,7 @@ export default function Contact() {
                     <textarea
                       id="message"
                       name="message"
-                      placeholder="Tell me about your project..."
+                      placeholder="Tell me about your training program or project..."
                       rows={6}
                       required
                       className="border-input placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 flex field-sizing-content min-h-16 w-full rounded-md border bg-transparent px-3 py-2 text-base shadow-xs transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
@@ -280,11 +280,12 @@ export default function Contact() {
             >
               <div className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border shadow-sm p-6 bg-gradient-to-br from-primary/10 to-accent/10 border-primary/20">
                 <h3 className="font-semibold mb-2">
-                  Available for Freelance
+                  Available for Training &amp; Software Work
                 </h3>
                 <p className="text-sm text-muted-foreground">
-                  I&apos;m currently available for full-time opportunities and
-                  freelance projects.
+                  I&apos;m currently available for IT training engagements —
+                  online or in-center — as well as full-time software
+                  engineering opportunities.
                 </p>
               </div>
             </div>

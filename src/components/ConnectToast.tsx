@@ -54,17 +54,17 @@ export default function ConnectToast() {
                 <circle cx="4" cy="4" r="2"></circle>
               </svg>
             </div>
-            <div className="text-lg font-bold">Let's Connect!</div>
+            <div className="text-lg font-bold">Let&apos;s Connect!</div>
           </div>
         </div>
 
         <div className="px-6 pb-2 text-sm text-muted-foreground leading-relaxed">
           <p className="font-medium text-foreground mb-1">
-            Want to see how I solve real-world problems?
+            Want to see how I teach and solve real-world problems?
           </p>
           <p>
-            I actively share Flutter challenges, solutions, and learning topics
-            on LinkedIn.
+            I share training insights, engineering challenges, and classroom
+            solutions on LinkedIn.
           </p>
         </div>
 

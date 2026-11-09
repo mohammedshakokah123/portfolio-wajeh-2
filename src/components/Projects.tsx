@@ -17,12 +17,16 @@ export default function Projects() {
     >
       <div className="mx-auto px-4">
         <div className="animate-fade-up mb-12 text-center">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-primary-strong">
+            Practical Experience
+          </p>
           <h2 className="mb-4 text-balance text-3xl font-bold text-foreground md:text-4xl">
-            Featured Projects
+            Projects &amp; Applied Work
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
-            A showcase of my recent Flutter applications, demonstrating
-            expertise in mobile development and UI/UX design.
+            Real applications I have designed, built, and shipped — the same
+            production experience I bring into the classroom as practical,
+            project-based training.
           </p>
         </div>
 

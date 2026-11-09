@@ -277,28 +277,4 @@ export const projects: Project[] = [
       "/images/dental lap/kl1.jpg",
     ],
   },
-  {
-    id: 11,
-    title: "Graduation Project",
-    description:
-      "A mobile application built as my graduation project at the institute. It showcases my end-to-end development skills — from UI/UX design to a fully working app.",
-    image: "/images/graduation-project/webp/1.webp",
-    tags: ["Flutter", "UI/UX"],
-    links: {},
-    status: "Completed",
-    type: "Graduation Project",
-    screenshots: [
-      "/images/graduation-project/webp/1.webp",
-      "/images/graduation-project/webp/2.webp",
-      "/images/graduation-project/webp/3.webp",
-      "/images/graduation-project/webp/4.webp",
-      "/images/graduation-project/webp/5.webp",
-      "/images/graduation-project/webp/6.webp",
-      "/images/graduation-project/webp/7.webp",
-      "/images/graduation-project/webp/8.webp",
-    ],
-    video: "/images/graduation-project/demo.mp4",
-    longDescription:
-      "My graduation project at the institute — a complete mobile application designed and developed from scratch, covering the full cycle of planning, UI/UX design, development, and testing.",
-  },
 ];

@@ -2,38 +2,30 @@ const features = [
   {
     icon: (
       <svg className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-        <path d="m18 16 4-4-4-4" />
-        <path d="m6 8-4 4 4 4" />
-        <path d="m14.5 4-5 16" />
+        <rect x="3" y="4" width="18" height="12" rx="2" />
+        <path d="M8 20h8" />
+        <path d="M12 16v4" />
+        <path d="m7 11 2-2 2 2 3-3" />
       </svg>
     ),
-    title: "Flutter Development",
+    title: "Technical Instruction",
     description:
-      "Expert in building cross-platform apps with Flutter, Dart, and modern state management solutions.",
+      "Teaching programming fundamentals, mobile development, and software design in a way beginners can follow and apply.",
     delay: "0s",
   },
   {
     icon: (
       <svg className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-        <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
-        <path d="M12 18h.01" />
+        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+        <path d="M9 7h7" />
+        <path d="M9 11h7" />
       </svg>
     ),
-    title: "Mobile UI/UX",
+    title: "Courseware & Curriculum",
     description:
-      "Creating intuitive and beautiful user interfaces that follow platform design guidelines.",
+      "Designing structured lessons, progressive exercises, and project briefs aligned to clear learning outcomes.",
     delay: "0.1s",
-  },
-  {
-    icon: (
-      <svg className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-        <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z" />
-      </svg>
-    ),
-    title: "Performance",
-    description:
-      "Optimizing app performance, reducing load times, and ensuring smooth 60fps animations.",
-    delay: "0.2s",
   },
   {
     icon: (
@@ -44,9 +36,22 @@ const features = [
         <circle cx="9" cy="7" r="4" />
       </svg>
     ),
-    title: "Collaboration",
+    title: "Mentorship & Guidance",
     description:
-      "Working effectively with teams, communicating clearly, and delivering projects on time.",
+      "Supporting students through code reviews, pair debugging, career advice, and confidence building.",
+    delay: "0.2s",
+  },
+  {
+    icon: (
+      <svg className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+        <path d="m18 16 4-4-4-4" />
+        <path d="m6 8-4 4 4 4" />
+        <path d="m14.5 4-5 16" />
+      </svg>
+    ),
+    title: "Software Engineering",
+    description:
+      "3+ years building production applications with clean architecture, API integration, and modern tooling.",
     delay: "0.3s",
   },
 ];
@@ -63,9 +68,9 @@ export default function About() {
             About Me
           </h2>
           <p className="mx-auto max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            Passionate Flutter developer with 3+ years of experience building
-            mobile applications. I specialize in creating elegant, performant
-            apps that users love.
+            IT instructor and software engineer with 3+ years of experience
+            building applications and training learners. I specialize in making
+            technical subjects clear, practical, and achievable.
           </p>
         </div>
 
@@ -109,26 +114,32 @@ export default function About() {
               <h3 className="text-2xl font-bold mb-4">My Journey</h3>
               <div className="space-y-4 leading-relaxed text-muted-foreground">
                 <p>
-                  I started university in 2020 and began learning Flutter and
-                  mobile development in 2022. In 2023, I started working
-                  professionally as a Flutter developer, gaining 3 years of
+                  I started university in 2020 and began learning programming
+                  and mobile development in 2022. In 2023 I started working
+                  professionally as a software engineer, gaining 3+ years of
                   experience building production-ready apps across e-commerce,
                   dashboards, and social platforms.
                 </p>
                 <p>
-                  Throughout my studies, my GPA was consistently strong, around
-                  80, with no failed years, and I successfully graduated from
-                  university. I am currently fully available for work, with
-                  stable internet and electricity, focusing on writing clean,
-                  maintainable code and delivering exceptional user experiences.
+                  Alongside engineering, I moved into teaching — delivering IT
+                  and programming training in-center and online. I design the
+                  courseware, run hands-on lab sessions, and mentor students
+                  through their first real projects, from fundamentals to
+                  deployment.
                 </p>
                 <p>
-                  I always share my experience and the problems I&apos;ve solved
-                  on platforms like LinkedIn, and I continuously explore new
-                  technologies and best practices to stay at the forefront of
-                  mobile development. Outside of work, I enjoy contributing to
-                  open-source projects and sharing knowledge through technical
-                  articles.
+                  Throughout my studies, my GPA was consistently strong, around
+                  80, with no failed years, and I successfully graduated. I am
+                  currently available for training programs and software work,
+                  with stable internet and electricity, and I focus on clear
+                  explanations, clean code, and practical outcomes for learners.
+                </p>
+                <p>
+                  I regularly share the problems I solve and the lessons I teach
+                  on LinkedIn, and I continue exploring new technologies and
+                  teaching practices. Outside of work, I enjoy contributing to
+                  open-source projects and writing technical guides for
+                  beginners.
                 </p>
               </div>
             </div>
