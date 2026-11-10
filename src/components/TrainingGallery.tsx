@@ -164,12 +164,12 @@ function VideoEmbed() {
 
       <div>
         <h3 className="text-xl font-semibold text-foreground">{title}</h3>
-        <p className="mt-2 max-w-xl text-sm leading-relaxed text-muted-foreground">
+        <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground">
           {description}
         </p>
       </div>
 
-      <ul className="mt-1 flex flex-col gap-2.5">
+      <ul className="mt-1 grid gap-2.5 sm:grid-cols-3 sm:gap-4">
         {highlights.map((item) => (
           <li
             key={item}
@@ -212,9 +212,9 @@ function VideoEmbed() {
           <div className="mt-6">{details}</div>
         </div>
       ) : fileSrc ? (
-        <div className="grid gap-6 p-5 sm:p-6 lg:grid-cols-[19rem_1fr] lg:items-center lg:gap-10">
-          <div className="mx-auto w-full max-w-[19rem] rounded-[1.75rem] border border-border bg-black p-1.5 shadow-lg">
-            <div className="relative aspect-[9/16] overflow-hidden rounded-[1.35rem] bg-black">
+        <>
+          <div className="p-4 sm:p-5">
+            <div className="relative aspect-video w-full overflow-hidden rounded-xl border border-border bg-black sm:aspect-[21/9]">
               <video
                 src={fileSrc}
                 controls
@@ -226,8 +226,10 @@ function VideoEmbed() {
               </video>
             </div>
           </div>
-          {details}
-        </div>
+          <div className="border-t border-border px-5 py-6 sm:px-6">
+            {details}
+          </div>
+        </>
       ) : (
         <div className="flex flex-col items-center justify-center gap-4 bg-gradient-to-br from-primary/20 via-background to-secondary px-6 py-16 text-center">
           <span className="flex h-16 w-16 items-center justify-center rounded-full border border-primary/30 bg-primary/15 text-primary">

@@ -86,7 +86,7 @@ function Carousel({ screenshots, title }: { screenshots: string[]; title: string
       <button
         onClick={prev}
         disabled={current === 0}
-        className="items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 outline-none border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 absolute size-8 rounded-full top-1/2 -left-12 -translate-y-1/2 hidden md:flex cursor-pointer"
+        className="items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 outline-none border border-input bg-input/30 shadow-xs hover:bg-input/50 hover:text-accent-foreground absolute size-8 rounded-full top-1/2 -left-12 -translate-y-1/2 hidden md:flex cursor-pointer"
       >
         <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
           <path d="m12 19-7-7 7-7" />
@@ -98,7 +98,7 @@ function Carousel({ screenshots, title }: { screenshots: string[]; title: string
       <button
         onClick={next}
         disabled={current === max}
-        className="items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 outline-none border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 absolute size-8 rounded-full top-1/2 -right-12 -translate-y-1/2 hidden md:flex cursor-pointer"
+        className="items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 outline-none border border-input bg-input/30 shadow-xs hover:bg-input/50 hover:text-accent-foreground absolute size-8 rounded-full top-1/2 -right-12 -translate-y-1/2 hidden md:flex cursor-pointer"
       >
         <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
           <path d="M5 12h14" />
