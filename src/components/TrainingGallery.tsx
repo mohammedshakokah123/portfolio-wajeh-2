@@ -86,13 +86,10 @@ const projectScreens = [
  */
 const workshopVideo: {
   title: string;
-  description: string;
   embedUrl: string;
   fileSrc: string;
 } = {
   title: "Graduation Project Walkthrough",
-  description:
-    "A recorded walkthrough from the graduation project sessions — used in training as a practical case study for planning, building, and delivering a complete application.",
   embedUrl: "",
   fileSrc: "/images/graduation-project/demo.mp4",
 };
@@ -135,19 +132,13 @@ function PhotoPlaceholder() {
 }
 
 function VideoEmbed() {
-  const { title, description, embedUrl, fileSrc } = workshopVideo;
-
-  const highlights = [
-    "Planning the scope and feature list before writing code",
-    "Structuring the codebase so it stays easy to maintain",
-    "Turning the screens into a working, demo-ready build",
-  ];
+  const { title, embedUrl, fileSrc } = workshopVideo;
 
   const details = (
-    <div className="flex flex-col gap-4">
-      <span className="inline-flex w-fit items-center gap-1.5 rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-medium text-primary-strong">
+    <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 text-center">
+      <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-primary-strong">
         <svg
-          className="h-3.5 w-3.5"
+          className="h-4 w-4"
           fill="none"
           stroke="currentColor"
           strokeWidth="2"
@@ -156,41 +147,14 @@ function VideoEmbed() {
           viewBox="0 0 24 24"
           aria-hidden="true"
         >
-          <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5" />
-          <rect x="2" y="6" width="14" height="12" rx="2" />
+          <path d="M12 3v3m0 12v3M5.64 5.64l2.12 2.12m8.48 8.48 2.12 2.12M3 12h3m12 0h3M5.64 18.36l2.12-2.12m8.48-8.48 2.12-2.12" />
+          <circle cx="12" cy="12" r="4" />
         </svg>
-        Workshop Video
+        Teaching in Action
       </span>
-
-      <div>
-        <h3 className="text-xl font-semibold text-foreground">{title}</h3>
-        <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground">
-          {description}
-        </p>
-      </div>
-
-      <ul className="mt-1 grid gap-2.5 sm:grid-cols-3 sm:gap-4">
-        {highlights.map((item) => (
-          <li
-            key={item}
-            className="flex items-start gap-2.5 text-sm leading-relaxed text-muted-foreground"
-          >
-            <svg
-              className="mt-0.5 h-4 w-4 shrink-0 text-primary-strong"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path d="m20 6-11 11-5-5" />
-            </svg>
-            <span>{item}</span>
-          </li>
-        ))}
-      </ul>
+      <span className="text-base font-medium text-foreground sm:text-lg">
+        Practical IT Training
+      </span>
     </div>
   );
 
